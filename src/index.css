@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+}
+
+/* Custom Selection Color */
+::selection {
+  @apply bg-accent text-white;
+}
+
+/* Smooth Image Loading */
+img {
+  @apply transition-opacity duration-300;
+}
