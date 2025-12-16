@@ -8,8 +8,7 @@ const Hero = () => {
     const phrases = [
         "Hi, I'm Onat Akca.",
         "And I love cooking 🥘",
-        "model.train()",
-        "And I'm addicted to ☕️"
+        "model.train()"
     ];
 
     const typedText = useTypewriter(phrases, 100, 50, 2000);
