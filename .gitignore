@@ -35,3 +35,10 @@ yarn-error.log*
 
 # PDF Resume (source)
 Onat_s_Resume.pdf
+
+# LaTeX files
+*.tex
+*.aux
+*.log
+*.out
+*.synctex.gz

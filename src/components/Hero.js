@@ -56,7 +56,7 @@ const Hero = () => {
                     transition={{ delay: 1.1, duration: 0.8 }}
                     className="flex flex-wrap justify-center gap-6 mb-16"
                 >
-                    <a href="/resume.pdf" download className="flex items-center gap-2 text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300">
+                    <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="Onat_Akca_Resume.pdf" className="flex items-center gap-2 text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300">
                         <FileText className="w-5 h-5" />
                         <span className="text-sm font-medium">Resume</span>
                     </a>
