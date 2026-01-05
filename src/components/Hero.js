@@ -63,7 +63,7 @@ const Hero = () => {
                         <Github className="w-5 h-5" />
                         <span className="text-sm font-medium">GitHub</span>
                     </a>
-                    <a href="#" className="flex items-center gap-2 text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300">
+                    <a href="https://orcid.org/0009-0005-3326-2474" className="flex items-center gap-2 text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300">
                         <BookOpen className="w-5 h-5" />
                         <span className="text-sm font-medium">Publications</span>
                     </a>
