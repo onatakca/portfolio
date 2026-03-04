@@ -3,9 +3,18 @@ import { motion } from 'framer-motion';
 
 const experiences = [
     {
+        company: "Vlisco",
+        role: "Master's Research Intern — Machine Learning",
+        period: "Feb 2026 - Present",
+        description: [
+            "Developing scalable image segmentation solutions for fabric design automation using state-of-the-art deep learning architectures.",
+            "Conducting Master's thesis research on AI-driven approaches to fabric pattern analysis and automated design workflows."
+        ]
+    },
+    {
         company: "Middle East Technical University (METU)",
         role: "Graduate Research Assistant (Computer Vision)",
-        period: "Oct 2023 - Present",
+        period: "Oct 2023 - Sept 2025",
         description: [
             "Optimized nnUNetv2 and DeepLabv3 architectures for advanced eyelid gland segmentation, fine-tuning hyperparameters to maximize image analysis efficiency.",
             "Achieved a DICE score of 0.84 for gland segmentation and 0.92 for eyelid segmentation, significantly surpassing existing benchmarks."
