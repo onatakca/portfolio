@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://onatakca.github.io/portfolio",
+  "homepage": "https://onatakca.com",
   "dependencies": {
     "framer-motion": "^10.0.0",
     "lucide-react": "^0.292.0",
