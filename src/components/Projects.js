@@ -12,11 +12,11 @@ const projects = [
         link: "#"
     },
     {
-        title: "Face Rater AI",
-        category: "Computer Vision",
-        description: "Algorithmic analysis of facial geometry using dlib's 68-point landmark detection. Computes attractiveness scores based on Golden Ratio mathematics rather than black-box models.",
-        tech: ["Python", "dlib", "OpenCV"],
-        github: "https://github.com/onatakca/face-rater",
+        title: "EA75 Max Control",
+        category: "Reverse Engineering",
+        description: "Native macOS app for a keyboard with Windows-only vendor software. Reverse-engineered the undocumented USB-HID protocol via driver disassembly, enabling per-key RGB, TFT screen uploads, and wireless settings.",
+        tech: ["Python", "USB-HID", "radare2"],
+        github: "https://github.com/onatakca/ea75max-mac",
         link: "#"
     },
     {

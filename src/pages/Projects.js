@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Activity, Users, FileText, Globe } from 'lucide-react';
+import { Github, ExternalLink, Activity, Keyboard, FileText, Globe } from 'lucide-react';
 
 const projects = [
     {
@@ -12,12 +12,12 @@ const projects = [
         icon: Activity
     },
     {
-        title: "AI Attractiveness Rater",
-        description: "Computer Vision application analyzing facial geometry (Golden Ratio, Symmetry) using dlib's 68-point landmark detection. Applies geometric algorithms rather than black-box deep learning to compute scores.",
-        techStack: ["Python", "dlib", "OpenCV", "NumPy", "Computer Vision"],
-        link: "https://onatakca.github.io/face-rater",
-        github: "https://github.com/onatakca/face-rater",
-        icon: Users
+        title: "EA75 Max Control",
+        description: "Native macOS app for the Epomaker EA75 Max keyboard, whose vendor software is Windows-only. Reverse-engineered the undocumented USB-HID protocol by disassembling the vendor driver and verifying on real hardware — per-key RGB, TFT screen image uploads, and wireless power settings from a packaged native app.",
+        techStack: ["Python", "hidapi", "radare2", "pywebview", "Reverse Engineering"],
+        link: "https://github.com/onatakca/ea75max-mac",
+        github: "https://github.com/onatakca/ea75max-mac",
+        icon: Keyboard
     },
     {
         title: "Serverless Daily News Bot",
