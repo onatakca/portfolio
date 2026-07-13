@@ -7,8 +7,10 @@ const experiences = [
         role: "Master's Research Intern — Machine Learning",
         period: "Feb 2026 - Present",
         description: [
-            "Developing scalable image segmentation solutions for fabric design automation using state-of-the-art deep learning architectures.",
-            "Conducting Master's thesis research on AI-driven approaches to fabric pattern analysis and automated design workflows."
+            "Building an end-to-end motif segmentation system for textile design automation: SAM3 exemplar-based detection combined with a custom topology-aware refinement model (PyTorch), served by a dockerized async API (FastAPI, Redis, GPU worker) and nearing production launch.",
+            "Created the project's ground truth solo — built a browser-based annotation tool and labelled ~380 designs into a benchmark of 261 motif units and ~18,400 instances.",
+            "Trained topology-aware boundary refinement models (clDice loss, automatically derived gap supervision), cutting boundary error (HD95) by 35% and raising pixel-exact fill rates from 1.2% to 16.3% on held-out designs.",
+            "Built a Photoshop UXP plugin (React) so designers drive the segmentation API from inside their existing workflow, replacing a manual blocking process that took ~40 minutes per design."
         ]
     },
     {
