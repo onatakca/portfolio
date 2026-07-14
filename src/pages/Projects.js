@@ -7,8 +7,6 @@ const projects = [
         title: "Football Data AI App",
         description: "A comprehensive ETL system that builds a historical database for the Turkish Super Lig. Handles API rate limits and maps complex relationships (transfers, stats) to create a dataset ready for predictive modeling.",
         techStack: ["Python", "SQLAlchemy", "SQLite", "Pandas", "API-Football"],
-        link: "https://onatakca.github.io/football-data-ai-app", // Placeholder, you can update if deployed
-        github: "https://github.com/onatakca/football-data-ai-app", // Placeholder
         icon: Activity
     },
     {
@@ -31,8 +29,6 @@ const projects = [
         title: "Dutch Learning App",
         description: "EdTech tool that programmatically fetches and parses lessons from Wikibooks. Converts unstructured web text into structured JSON data for a React frontend.",
         techStack: ["JavaScript", "Wikibooks API", "Regex", "Data Parsing"],
-        link: "https://onatakca.github.io/dutch-learning-app",
-        github: "https://github.com/onatakca/dutch-learning-app",
         icon: FileText
     }
 ];
@@ -72,22 +68,26 @@ const Projects = () => {
                                     <Icon className="w-8 h-8" />
                                 </div>
                                 <div className="flex gap-4">
-                                    <a
-                                        href={project.github}
-                                        target="_blank" rel="noopener noreferrer"
-                                        className="text-textMuted hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
-                                        aria-label="View Source"
-                                    >
-                                        <Github className="w-5 h-5" />
-                                    </a>
-                                    <a
-                                        href={project.link}
-                                        target="_blank" rel="noopener noreferrer"
-                                        className="text-textMuted hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full"
-                                        aria-label="View Project"
-                                    >
-                                        <ExternalLink className="w-5 h-5" />
-                                    </a>
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank" rel="noopener noreferrer"
+                                            className="text-textMuted hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
+                                            aria-label="View Source"
+                                        >
+                                            <Github className="w-5 h-5" />
+                                        </a>
+                                    )}
+                                    {project.link && project.link !== project.github && (
+                                        <a
+                                            href={project.link}
+                                            target="_blank" rel="noopener noreferrer"
+                                            className="text-textMuted hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full"
+                                            aria-label="View Project"
+                                        >
+                                            <ExternalLink className="w-5 h-5" />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 

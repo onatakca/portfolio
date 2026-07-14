@@ -7,25 +7,21 @@ const projects = [
         title: "Football Data AI",
         category: "Data Engineering",
         description: "A comprehensive ETL system indexing the Turkish Super Lig. Handles API rate limits, complex relationship mapping, and builds a historical dataset for predictive modeling.",
-        tech: ["Python", "SQLAlchemy", "Pandas"],
-        github: "https://github.com/onatakca/football-data-ai-app",
-        link: "#"
+        tech: ["Python", "SQLAlchemy", "Pandas"]
     },
     {
         title: "EA75 Max Control",
         category: "Reverse Engineering",
         description: "Native macOS app for a keyboard with Windows-only vendor software. Reverse-engineered the undocumented USB-HID protocol via driver disassembly, enabling per-key RGB, TFT screen uploads, and wireless settings.",
         tech: ["Python", "USB-HID", "radare2"],
-        github: "https://github.com/onatakca/ea75max-mac",
-        link: "#"
+        github: "https://github.com/onatakca/ea75max-mac"
     },
     {
         title: "News Bot",
         category: "Automation",
         description: "Serverless data pipeline that aggregates news, summarizes it via Google Gemini LLM, and dispatches daily digests. Runs entirely on GitHub Actions.",
         tech: ["Gemini API", "GitHub Actions", "SMTP"],
-        github: "https://github.com/onatakca/serverless-news-etl",
-        link: "#"
+        github: "https://github.com/onatakca/serverless-news-etl"
     }
 ];
 
@@ -51,8 +47,8 @@ const Projects = () => {
                             <div className="flex justify-between items-start mb-6">
                                 <span className="text-xs font-mono font-bold text-accent-secondary uppercase tracking-wider">{project.category}</span>
                                 <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <a href={project.github} className="text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300 translate-y-2 group-hover:translate-y-0 transform"><Github className="w-5 h-5" /></a>
-                                    <a href={project.link} className="text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300 translate-y-2 group-hover:translate-y-0 transform delay-75"><ArrowUpRight className="w-5 h-5" /></a>
+                                    {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300 translate-y-2 group-hover:translate-y-0 transform"><Github className="w-5 h-5" /></a>}
+                                    {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-light-textMuted dark:text-dark-textMuted hover:text-accent transition-colors duration-300 translate-y-2 group-hover:translate-y-0 transform delay-75"><ArrowUpRight className="w-5 h-5" /></a>}
                                 </div>
                             </div>
 
